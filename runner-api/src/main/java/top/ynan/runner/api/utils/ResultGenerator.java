@@ -5,7 +5,7 @@ import top.ynan.runner.api.vo.Result;
 /**
  * 响应结果生成工具
  *
- * @author 李忠
+ * @author 袁建楠
  *
  */
 public class ResultGenerator {

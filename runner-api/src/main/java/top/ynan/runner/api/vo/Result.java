@@ -6,7 +6,7 @@ import java.io.Serializable;
 /**
  * 统一API响应结果封装
  *
- * @author 李忠
+ * @author 袁建楠
  *
  * @param <T>
  *            数据对象

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @Autowired
     private HelloService helloService;
-    //http://localhost:8088/api/hello/say?name=World
+    //http://localhost:8080/api/hello/say?name=World
     @GetMapping("/say")
     public String say(@RequestParam String name){
         return helloService.say(name);

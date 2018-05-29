@@ -14,7 +14,7 @@ public class ExampleController {
     @Autowired
     private ExampleService exampleService;
 
-    //http://localhost:8088/api/example/save?title=aa&remark=bb
+    //http://localhost:8080/api/example/save?title=aa&remark=bb
     @PostMapping("/save")
     public Result save(@RequestParam String title, @RequestParam String remark){
         Example example = new Example();
@@ -24,7 +24,7 @@ public class ExampleController {
         return ResultGenerator.ok(result);
     }
 
-    //http://localhost:8088/api/example/{id}
+    //http://localhost:8080/api/example/{id}
     @GetMapping("/{id}")
     public Result get(@PathVariable Long id){
         Example example = exampleService.findById(id);
